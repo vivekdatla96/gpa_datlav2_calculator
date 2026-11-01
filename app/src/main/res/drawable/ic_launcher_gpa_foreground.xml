@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Graduation cap, kept inside the 66dp adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Cap body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,49 L37,61 Q54,71 71,61 L71,49 L54,57 Z" />
+    <!-- Board -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,31 L83,44 L54,57 L25,44 Z" />
+    <!-- Tassel -->
+    <path
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,44 L79,47 L79,61" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M76,60 L82,60 L83,68 L75,68 Z" />
+</vector>

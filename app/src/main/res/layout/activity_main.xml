@@ -48,6 +48,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/gradeLayout1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -56,6 +57,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/grade1"
+                        android:maxLength="6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="56dp"
@@ -66,6 +68,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/gradeLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -74,6 +77,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/grade2"
+                        android:maxLength="6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="56dp"
@@ -84,6 +88,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/gradeLayout3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -92,6 +97,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/grade3"
+                        android:maxLength="6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="56dp"
@@ -102,6 +108,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/gradeLayout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -110,6 +117,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/grade4"
+                        android:maxLength="6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="56dp"
@@ -120,6 +128,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/gradeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -128,6 +137,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/grade5"
+                        android:maxLength="6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="56dp"
@@ -161,8 +171,7 @@
             android:padding="16dp"
             android:textColor="@color/gpa_on_result"
             android:textColorHint="@color/gpa_on_surface_variant"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 </ScrollView>

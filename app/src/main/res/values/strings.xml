@@ -11,4 +11,11 @@
     <string name="compute_gpa">Compute GPA</string>
     <string name="clear_form">Clear Form</string>
     <string name="result_placeholder">Your GPA will appear here</string>
+    <string name="gpa_result">GPA: %1$.2f</string>
+    <string name="status_low">Below 60 · needs improvement</string>
+    <string name="status_mid">60 to 79 · satisfactory</string>
+    <string name="status_high">80 or above · great work</string>
+    <string name="error_empty">Cannot be empty</string>
+    <string name="error_range">Enter a valid grade (0-100)</string>
+    <string name="error_invalid">Invalid number</string>
 </resources>
