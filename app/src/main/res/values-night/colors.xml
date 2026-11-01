@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App palette (dark) -->
+    <color name="gpa_primary">#9ECAFF</color>
+    <color name="gpa_on_primary">#003258</color>
+    <color name="gpa_background">#101418</color>
+    <color name="gpa_surface">#1A2027</color>
+    <color name="gpa_on_surface">#E2E8F0</color>
+    <color name="gpa_on_surface_variant">#AAB6C5</color>
+    <color name="gpa_result_empty">#1E2A38</color>
+
+    <color name="gpa_result_low">#5C1A16</color>
+    <color name="gpa_result_mid">#4D3B00</color>
+    <color name="gpa_result_high">#0F3D20</color>
+    <color name="gpa_on_result">#F1F1F1</color>
+</resources>

@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">gpa_datlav2_calculator</string>
+    <string name="app_name">GPA Calculator</string>
+    <string name="title">GPA Calculator</string>
+    <string name="subtitle">Enter a grade from 0 to 100 for each course.</string>
+    <string name="course_1">Course 1 grade</string>
+    <string name="course_2">Course 2 grade</string>
+    <string name="course_3">Course 3 grade</string>
+    <string name="course_4">Course 4 grade</string>
+    <string name="course_5">Course 5 grade</string>
+    <string name="grade_hint">0–100</string>
+    <string name="compute_gpa">Compute GPA</string>
+    <string name="clear_form">Clear Form</string>
+    <string name="result_placeholder">Your GPA will appear here</string>
 </resources>

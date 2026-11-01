@@ -1,97 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:columnCount="4"
-    android:rowCount="6"
-    android:orientation="horizontal">
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="Course 1 Grade:" />
-    <EditText
-        android:id="@+id/grade1"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_width="0dp"
-        android:inputType="numberDecimal" />
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="@string/title"
+            android:textAppearance="?attr/textAppearanceTitleLarge"
+            android:textColor="@color/gpa_on_surface"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="Course 2 Grade:" />
-    <EditText
-        android:id="@+id/grade2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:inputType="numberDecimal" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="3"
+            android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_row="2"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:text="Course 3 Grade:" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:hint="@string/course_1"
+                app:placeholderText="@string/grade_hint">
 
-    <EditText
-        android:id="@+id/grade3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:inputType="numberDecimal" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/grade1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="Course 4 Grade:" />
-    <EditText
-        android:id="@+id/grade4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:inputType="numberDecimal" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:hint="@string/course_2"
+                app:placeholderText="@string/grade_hint">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/grade2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_row="4"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:text="Course 5 Grade:" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:hint="@string/course_3"
+                app:placeholderText="@string/grade_hint">
 
-    <EditText
-        android:id="@+id/grade5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_row="4"
-        android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:inputType="numberDecimal" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/grade3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/gpaResult"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_columnWeight="2"
-        android:textAlignment="center"
-        android:text="Total GPA" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:hint="@string/course_4"
+                app:placeholderText="@string/grade_hint">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/grade4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/computeGpaButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/sky_blue"
-        android:layout_columnWeight="2"
-        android:text="Compute GPA" />
-</GridLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:hint="@string/course_5"
+                app:placeholderText="@string/grade_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/grade5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/computeGpaButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:minHeight="56dp"
+                android:text="@string/compute_gpa"
+                android:textSize="16sp"
+                app:cornerRadius="28dp" />
+
+            <TextView
+                android:id="@+id/gpaResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:accessibilityLiveRegion="polite"
+                android:background="@color/gpa_result_empty"
+                android:gravity="center"
+                android:hint="@string/result_placeholder"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="@color/gpa_on_result"
+                android:textColorHint="@color/gpa_on_surface_variant"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -4,4 +4,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="sky_blue">#87CEEB</color>
 
+    <!-- App palette (light) -->
+    <color name="gpa_primary">#1565C0</color>
+    <color name="gpa_on_primary">#FFFFFF</color>
+    <color name="gpa_background">#F3F7FC</color>
+    <color name="gpa_surface">#FFFFFF</color>
+    <color name="gpa_on_surface">#0D2A4A</color>
+    <color name="gpa_on_surface_variant">#46586E</color>
+    <color name="gpa_result_empty">#E3EEFB</color>
+
+    <!-- Result states: soft tints with dark text keep at least 7:1 contrast -->
+    <color name="gpa_result_low">#FDE2E1</color>
+    <color name="gpa_result_mid">#FFF1C2</color>
+    <color name="gpa_result_high">#D7F5DD</color>
+    <color name="gpa_on_result">#1A1C1E</color>
 </resources>

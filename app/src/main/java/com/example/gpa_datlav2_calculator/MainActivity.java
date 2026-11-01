@@ -1,5 +1,4 @@
 package com.example.gpa_datlav2_calculator;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         computeGpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ("Clear Form".equals(computeGpaButton.getText().toString())) {
+                if (getString(R.string.clear_form).equals(computeGpaButton.getText().toString())) {
                     clearForm();
                 } else {
                     if (validateInputs()) {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
                     // Change button text back to "Compute GPA" when  starts typing
-                    computeGpaButton.setText("Compute GPA");
+                    computeGpaButton.setText(R.string.compute_gpa);
                 }
 
                 @Override
@@ -95,11 +95,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateGpaDisplay(double gpa) {
         gpaResult.setText(String.format("GPA: %.2f", gpa));
-        computeGpaButton.setText("Clear Form");
+        computeGpaButton.setText(R.string.clear_form);
 
-        if (gpa < 60) gpaResult.setBackgroundColor(Color.RED);
-        else if (gpa >= 60 && gpa < 80) gpaResult.setBackgroundColor(Color.YELLOW);
-        else gpaResult.setBackgroundColor(Color.GREEN);
+        if (gpa < 60) gpaResult.setBackgroundColor(ContextCompat.getColor(this, R.color.gpa_result_low));
+        else if (gpa >= 60 && gpa < 80) gpaResult.setBackgroundColor(ContextCompat.getColor(this, R.color.gpa_result_mid));
+        else gpaResult.setBackgroundColor(ContextCompat.getColor(this, R.color.gpa_result_high));
     }
 
     private void clearForm() {
@@ -108,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
             input.setError(null);
         }
         gpaResult.setText("");
-        gpaResult.setBackgroundColor(Color.TRANSPARENT);
-        computeGpaButton.setText("Compute GPA");
+        gpaResult.setBackgroundColor(ContextCompat.getColor(this, R.color.gpa_result_empty));
+        computeGpaButton.setText(R.string.compute_gpa);
     }
 
 }
