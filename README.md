@@ -1,5 +1,6 @@
 # GPA Calculator
-n[![Android CI](https://github.com/vivekdatla96/gpa_datlav2_calculator/actions/workflows/android.yml/badge.svg)](https://github.com/vivekdatla96/gpa_datlav2_calculator/actions/workflows/android.yml)
+
+[![Android CI](https://github.com/vivekdatla96/gpa_datlav2_calculator/actions/workflows/android.yml/badge.svg)](https://github.com/vivekdatla96/gpa_datlav2_calculator/actions/workflows/android.yml)
 
 A small Android app that averages five course grades (0–100) and shows the result with a color-coded status.
 
